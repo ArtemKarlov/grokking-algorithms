@@ -27,7 +27,7 @@ function binarySearch<T extends number>(array: T[], searchElement: T): number {
   return -1;
 }
 
-const binarySearchTestArray = [1, 3, 0, 1, 9, 4, 8, 7, 5, 2];
-
-console.log(binarySearch(binarySearchTestArray, 3)); // 1
-console.log(binarySearch(binarySearchTestArray, 10)); // -1
+console.log(binarySearch([2, 3, 4, 5, 6, 7, 8, 10, 11, 12], 3)); // 1
+console.log(binarySearch([2, 3, 4, 5, 6, 7, 8, 10, 11, 12], 11)); // 8
+console.log(binarySearch([2, 3, 4, 5, 6, 7, 8, 10, 11, 12], 13)); // -1
+console.log(binarySearch([2, 3, 4, 5, 6, 7, 8, 10, 11, 12], 1)); // -1
