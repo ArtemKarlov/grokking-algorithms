@@ -7,9 +7,10 @@
  * @timecomplexity - The time complexity of this recursive sum function is O(n).
  */
 function recursiveSum(array: number[]): number {
-  if (array.length === 1) return array[0];
+  if (array.length === 0) return 0;
 
   return array[0] + recursiveSum(array.slice(1));
 }
 
-console.log(recursiveSum([1, 2, 3, 4, 5])); //15
+console.log(recursiveSum([1, 2, 3, 4, 5])); // 15
+console.log(recursiveSum([])); // 0

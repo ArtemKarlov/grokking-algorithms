@@ -8,7 +8,6 @@
  */
 function recursiveMax(array: number[]): number | null {
   if (array.length === 0) return null;
-  if (array.length === 1) return array[0];
 
   return Math.max(...[array[0], recursiveMax(array.slice(1)) ?? array[0]]);
 }
